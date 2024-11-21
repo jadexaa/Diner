@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SCSS Start File | Jade Xa</title>
+    <meta name="author" content="Jade Xa">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
+
+    <!-- fav icon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <a href="index.html"><img src="images/logo1x.png" alt="mainlogo" width="50" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a>
+            <h1>Corner Diner</h1>
+        </header>
+    </div>
+    
+    <div id="navWrapper">
+        <nav>
+            <button id="menuBtn">&#9776;</button>
+            <ul id="navItems">
+                <li class="active"><a href="#">Menu</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mainWrapper">
+        <main>
+            <h1>Corner Diner Menu</h1>
+            <div class="allCards">
+                <section>
+                    <h2>Bacon Cheeseburger</h2>
+                    <img class="e2e" src="images/Bacon.webp" alt="burger" width="300" height="175">
+                    <p>Juicy, perfectly grilled beef patty topped with crispy bacon, melted cheese, and all your favorite fixings, served on a toasted bun.</p>
+                    <a href="#">Order for $12.99</a>
+                </section>
+
+                <section>
+                    <h2>Turkey Sandwich</h2>
+                    <img class="e2e" src="images/Turkey.webp" alt="turkeysandwich" width="300" height="175">
+                    <p>Tender roasted turkey served on fresh bread, smothered in rich, savory gravy for the ultimate comfort meal.</p>
+                    <a href="#">Order for $11.99</a>
+                </section>
+
+                <section>
+                    <h2>Lemon Pie</h2>
+                    <img class="e2e" src="images/Lemon.webp" alt="lemonpie" width="300" height="175">
+                    <p>A zesty, creamy delight with a buttery, flaky crust, tangy lemon filling, and a velvety smooth texture. Topped with fluffy meringue or a dusting of powdered sugar.</p>
+                    <a href="#">Order for $3.99</a>
+                </section>
+
+                <section>
+                    <h2>Buttermilk Pancakes</h2>
+                    <img class="e2e" src="images/Pancakes.webp" alt="pancakes" width="300" height="175">
+                    <p>Fluffy, golden pancakes made with rich buttermilk, delivering a melt-in-your-mouth texture and a hint of tangy sweetness. </p>
+                    <a href="#">Order for $7.99</a>
+                </section>
+
+                <section>
+                    <h2>Strawberry Float</h2>
+                    <img class="e2e" src="images/strawberryfloat.webp" alt="sfloat" width="300" height="175">
+                    <p>A refreshing blend of creamy vanilla ice cream and bubbly soda, topped with sweet strawberry syrup for a fizzy, fruity delight!</p>
+                    <a href="#">Order for $5.99</a>
+                </section>
+
+            </div>
+
+        </main>
+    </div>
+
+    <div id="footerWrapper">
+        <footer>
+            <div>
+                <section class="contact">
+                    <p><ion-icon name="person-circle-outline"></ion-icon>Jade Xa</p>
+                    <p><ion-icon name="location-outline"></ion-icon>Corner Diner, LLC</p>
+                    <p><ion-icon name="mail-outline"></ion-icon><a href="mailto:jadexa@cornerdiner.com">jadexa@cornerdiner.com</a></p>
+                    <p><ion-icon name="globe-outline"></ion-icon><a href="https://www.cornerdiner.com">www.cornerdiner.com</a></p>
+                    <p><ion-icon name="call-outline"></ion-icon><a href="tel:8018018018">801-801-8018</a></p>
+                </section>
+                <section class="social">
+                    <a  href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a  href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a  href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a  href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+                    <a  href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                </section>
+                <section class="location">
+                    <address>1801 Corner Drive Ave<br>Salt Lake City, UT</address>
+                </section>
+
+            </div>
+
+            <p class="legal"> &copy; <span id="year">x</span> &bull; Jade Xa</p>
+        </footer>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

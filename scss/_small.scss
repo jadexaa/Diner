@@ -1,0 +1,191 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+  }
+  
+  /*---- apply a natural box layout model to all elements -------*/
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+body {
+    height: 100%;
+    font-family: $defaultFont;
+    font-weight: $lightWeight;
+    color: $fontColor;
+}
+
+// HEADER START
+#headerWrapper {
+    background-color: $secondaryColor;
+    color: black;
+}
+
+header {
+        align-items: center;
+        padding: 1rem $gutter;
+        gap: 8px;
+        display: grid;
+        grid-template-columns: 62px auto;
+    h1 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: $boldWeight;
+    }
+}
+// END HEADER
+
+
+// NAV START
+#navWrapper {
+    background-color: $secondaryColor;
+}
+
+nav {
+    button {
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        padding: .6rem;
+    }
+    ul {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        border-top: solid 1px $thirdcolor;
+        li {
+            border-bottom: solid 1px $thirdcolor;
+            a {
+                display: block;
+                padding: .9rem;
+                color: black;
+                text-decoration: none;
+            }
+        }
+        li.active a {
+            background-color: $thirdcolor;
+        }
+        li a:hover {
+            background-color: lighten($thirdcolor, 10%);
+        }
+    }
+
+    ul.open {
+        display: block;
+    }
+}
+// END NAV
+
+// START MAIN
+main h1, div.allCards{
+    margin: 2vw;
+}
+
+div.allCards {
+    section {
+        
+        border: 2px solid $thirdcolor;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem 0;
+        
+        h2, p, img 
+        {
+            margin: 0;
+            padding: 1rem $gutter;
+        }
+        
+        h2 {
+            background-color: $secondaryColor;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+       
+        img.e2e {padding: 0;}
+        
+        p {
+           font-style: italic;
+        }
+
+        a {
+            display: block;
+            background-color: $primaryColor;
+            padding: .75rem;
+            text-align: center;
+            margin: 0 3rem 1rem 3rem;
+            border-radius: 8px;
+            color: black;
+            text-decoration: none;
+            font-weight: $boldWeight;
+            &:hover {
+                background-color: darken($primaryColor, 5%);}
+        }
+    }
+}
+
+// footer stuff
+#footerWrapper {
+    background-color: $fcolor;
+}
+
+footer {
+    padding: 0.5rem $gutter;
+    font-weight: $boldWeight;
+    color: black;
+    
+    section.contact {
+        p {
+            font-size: 1.2rem;
+        }
+
+        ion-icon {
+            color: black;
+            padding-right: 5px;
+        }
+
+        a {color: black;}
+    }
+
+    section.social{
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+        
+        a {
+            display: block;
+            border-radius: 5px;
+            font-size: 2rem;
+            margin: .2rem;
+            padding: .5rem;
+            color: black;
+            &:hover {
+                background-color: $primaryColor;
+            }
+        }
+    }
+
+    section.location {
+        font-size: 1.2rem;
+        padding: 1rem 0;
+    }
+
+    p.legal {
+        margin: 0;
+        padding: .5rem;
+        text-align: center;
+        font-size: .9rem;
+    }
+
+} // FOOTER END
